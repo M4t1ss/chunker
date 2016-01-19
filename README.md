@@ -1,5 +1,4 @@
 # Chunker
-Syntax-based Multi-System Hybrid Translator
 ===================================
 
 This is a sentence chunker PHP class + visualizer
