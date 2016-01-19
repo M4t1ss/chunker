@@ -1,6 +1,5 @@
-# Chunker
+Chunker
 ===================================
-
 This is a sentence chunker PHP class + visualizer
 
 It requires parse trees from the Berkeley Parser as input - https://github.com/slavpetrov/berkeleyparser
