@@ -221,7 +221,7 @@ class Node
 				$lastChunk = array_pop($chunks);
 				
 				//combine one-word chunks and non alphanumerical chunks with to bigger chunks
-				if(str_word_count($node->chunk) <= 1 || strlen(preg_replace( "/[^a-zA-Z0-9]/i", "", $lastChunk )) == 0 || is_numeric(preg_replace( "/[^a-zA-Z0-9]/i", "", $lastChunk )) || is_numeric($node->chunk)){
+				if(substr($lastChunk, 0, 3) == "of " || str_word_count($node->chunk) <= 1 || strlen(preg_replace( "/[^a-zA-Z0-9]/i", "", $lastChunk )) == 0 || is_numeric(preg_replace( "/[^a-zA-Z0-9]/i", "", $lastChunk )) || is_numeric($node->chunk)){
 					// oh, no!! the chunk is veeery small ): Can we add it to the next logical bigger chunk?
 					$chunks[] = $node->chunk." ".$lastChunk;
 					$node->chunkColor = $currentColor;
