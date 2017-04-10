@@ -17,4 +17,4 @@ An example for just get chunks from an English sentence with _ChunkSentence.php_
 	
 	
 
-(https://github.com/M4t1ss/chunker/blob/master/included/chunking.png?raw=true)
+![N|Solid](https://github.com/M4t1ss/chunker/blob/master/included/chunking.png?raw=true)
