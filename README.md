@@ -14,7 +14,7 @@ Example input for visualizing with _testChunker.php_:
 Options for _ChunkSentence.php_:
 
 | Option | Description                          | Required |
-| ------ |:------------------------------------:| --------:|
+|:------:|:-------------------------------------|:--------:|
 | -m     | minimal desired length of each chunk | no       |
 | -g     | grammar file for Berkeley Parser     | yes      |
 | -s     | input sentence                       | yes      |
