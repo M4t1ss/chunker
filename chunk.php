@@ -2,7 +2,7 @@
 
 include('chunkParseTree.php');
 
-function chunkInput($input){
+function chunkInput($input, $minSize = 4){
 	$input = str_replace("\n", "", $input);
 	$input = substr($input, 2);
 	$input = substr($input, 0, -2);
@@ -48,12 +48,12 @@ function chunkInput($input){
 	$wordCount = str_word_count($rootNode->traverse('inorder', ''));
 	$chunkSize = ceil($wordCount/4);
 	$finalChunks = array();
-	$rootNode->getChunksToSize($rootNode, $chunkSize, $finalChunks);
+	$rootNode->getChunksToSize($rootNode, $minSize, $chunkSize, $finalChunks);
 	while(count($finalChunks) > 10){
 		$finalChunks = array();
 		$rootNode->clearInnerChunks($rootNode);
 		$chunkSize = $chunkSize * 1.5;
-		$rootNode->getChunksToSize($rootNode, $chunkSize, $finalChunks);
+		$rootNode->getChunksToSize($rootNode, $minSize, $chunkSize, $finalChunks);
 	}
 	
 	$finalChunks = array_reverse($finalChunks);
@@ -77,15 +77,3 @@ function chunkAfile($inputFileName, $outputFileName){
 	fclose($inputFile);
 	fclose($outputFile);
 }
-
-
-
-
-
-
-
-
-
-
-
-
