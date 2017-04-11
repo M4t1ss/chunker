@@ -12,9 +12,7 @@ Example input for visualizing with _testChunker.php_:
 
 	
 Options for _ChunkSentence.php_:
-* -m - minimal desired length of each chunk
-* -g - the grammar file for Berkeley Parser
-* -s - the input sentence
+
 | Option | Description                          | Required |
 | ------ |:------------------------------------:| --------:|
 | -m     | minimal desired length of each chunk | no       |
