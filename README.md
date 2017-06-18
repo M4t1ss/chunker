@@ -32,3 +32,24 @@ php ChunkSentence.php -m 10 -g included/eng_sm6.gr -s "Recent works have proved 
 
 Publications
 ---------
+
+If you use the chunker, please cite the following paper:
+
+Matiss Rikters and Inguna Skadina (2016). "Syntax-based Multi-system Machine Translation." In Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016).
+
+```
+@InProceedings{RIKTERS16.156,
+  author = {Matīss Rikters and Inguna Skadina},
+  title = {Syntax-based Multi-system Machine Translation},
+  booktitle = {Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)},
+  year = {2016},
+  month = {may},
+  date = {23-28},
+  location = {Portorož, Slovenia},
+  editor = {Nicoletta Calzolari (Conference Chair) and Khalid Choukri and Thierry Declerck and Sara Goggi and Marko Grobelnik and Bente Maegaard and Joseph Mariani and Helene Mazo and Asuncion Moreno and Jan Odijk and Stelios Piperidis},
+  publisher = {European Language Resources Association (ELRA)},
+  address = {Paris, France},
+  isbn = {978-2-9517408-9-1},
+  language = {english}
+ }
+```
